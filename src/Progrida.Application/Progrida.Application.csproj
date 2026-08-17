@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Progrida.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- A Application só conhece o Domain. Ela não sabe que existe EF Core ou ASP.NET. -->
+    <ProjectReference Include="..\Progrida.Domain\Progrida.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

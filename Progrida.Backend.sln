@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Progrida.Domain", "src/Progrida.Domain/Progrida.Domain.csproj", "{45AA0FA6-4841-42DD-9C2D-0BA7B1554C44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Progrida.Application", "src/Progrida.Application/Progrida.Application.csproj", "{FF2EF69C-F03B-4DE9-A58A-25A8F113BE5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Progrida.Infrastructure", "src/Progrida.Infrastructure/Progrida.Infrastructure.csproj", "{7693CF84-BC1D-49F5-812C-065686AD2B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Progrida.API", "src/Progrida.API/Progrida.API.csproj", "{BA3AED3C-B592-4D11-A507-B3F85F1E7C0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45AA0FA6-4841-42DD-9C2D-0BA7B1554C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45AA0FA6-4841-42DD-9C2D-0BA7B1554C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45AA0FA6-4841-42DD-9C2D-0BA7B1554C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45AA0FA6-4841-42DD-9C2D-0BA7B1554C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF2EF69C-F03B-4DE9-A58A-25A8F113BE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2EF69C-F03B-4DE9-A58A-25A8F113BE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2EF69C-F03B-4DE9-A58A-25A8F113BE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2EF69C-F03B-4DE9-A58A-25A8F113BE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7693CF84-BC1D-49F5-812C-065686AD2B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7693CF84-BC1D-49F5-812C-065686AD2B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7693CF84-BC1D-49F5-812C-065686AD2B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7693CF84-BC1D-49F5-812C-065686AD2B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3AED3C-B592-4D11-A507-B3F85F1E7C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3AED3C-B592-4D11-A507-B3F85F1E7C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3AED3C-B592-4D11-A507-B3F85F1E7C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3AED3C-B592-4D11-A507-B3F85F1E7C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

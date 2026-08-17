@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Progrida.Domain</RootNamespace>
+  </PropertyGroup>
+
+  <!-- O Domain não referencia nenhum outro projeto ou pacote NuGet.
+       Ele não sabe que existe PostgreSQL, HTTP, EF Core ou JavaScript. -->
+
+</Project>

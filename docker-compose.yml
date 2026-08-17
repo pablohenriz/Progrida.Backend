@@ -1,0 +1,16 @@
+services:
+  progrida-db:
+    image: postgres:16-alpine
+    container_name: progrida-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: progrida
+      POSTGRES_USER: progrida
+      POSTGRES_PASSWORD: progrida_dev_only
+    ports:
+      - "5432:5432"
+    volumes:
+      - progrida_db_data:/var/lib/postgresql/data
+
+volumes:
+  progrida_db_data:
