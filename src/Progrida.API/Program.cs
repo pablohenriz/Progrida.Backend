@@ -70,14 +70,29 @@ builder.Services
 
 builder.Services.AddAuthorization();
 
+// ---------- CORS corrigido ----------
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Frontend", policy =>
     {
-        var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>()
-            ?? new[] { "http://localhost:5173" };
+        // Em desenvolvimento, permite todas as origens (útil para testar)
+        // Em produção, você deve restringir às origens específicas.
+        if (builder.Environment.IsDevelopment())
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        }
+        else
+        {
+            // Lê as origens permitidas do appsettings.json ou usa um fallback
+            var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>()
+                ?? new[] { "http://localhost:5173", "http://localhost:5500", "http://127.0.0.1:5500" }; // adicione aqui as origens do frontend
 
-        policy.WithOrigins(allowedOrigins).AllowAnyHeader().AllowAnyMethod();
+            policy.WithOrigins(allowedOrigins)
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        }
     });
 });
 
